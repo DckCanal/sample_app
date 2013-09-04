@@ -51,6 +51,9 @@ end
 group :test do
 	gem 'rspec'
 	gem 'webrat'
+	gem 'autotest'
+	gem 'redgreen'
+	gem 'test-unit'
 end
 
 gem 'execjs'

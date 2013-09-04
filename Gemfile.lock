@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ZenTest (4.9.3)
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
       mail (~> 2.5.3)
@@ -27,6 +28,8 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.13)
+    autotest (4.4.6)
+      ZenTest (>= 4.4.1)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -78,6 +81,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    redgreen (1.2.2)
     ref (1.0.5)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
@@ -111,6 +115,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    test-unit (2.5.5)
     therubyracer (0.12.0)
       libv8 (~> 3.16.14.0)
       ref
@@ -136,16 +141,19 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autotest
   coffee-rails (~> 4.0.0)
   execjs
   jbuilder (~> 1.2)
   jquery-rails
   pg
   rails (= 4.0.0)
+  redgreen
   rspec
   rspec-rails
   sass-rails (~> 4.0.0)
   sdoc
+  test-unit
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)
