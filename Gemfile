@@ -61,5 +61,7 @@ end
 
 gem 'execjs'
 gem 'therubyracer'
-gem 'rails_12factor'
+group :production do
+    gem 'rails_12factor'
+end
 
