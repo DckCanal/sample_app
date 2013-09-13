@@ -3,11 +3,25 @@
 	<head>
 		<title><%= title %></title>
 		<%= csrf_meta_tag %>
-		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-		<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+		
+		<%= render 'layouts/stylesheets' %>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<%= javascript_include_tag "bootstrap/bootstrap" %>
+		
+        
 	</head>
 	<body>
-		<%= yield %>
+		<div class="container">
+			
+			<%= render 'layouts/header' %>
+			
+			<section class="round">
+				<%= yield %>
+			</section>
+			
+			<%= render 'layouts/footer' %>
+		</div>
 	</body>
 </html>
 		
