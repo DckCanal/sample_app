@@ -61,3 +61,7 @@ end
 
 gem 'execjs'
 gem 'therubyracer'
+
+group :production, :staging do
+    gem 'rails_12factor'
+end
